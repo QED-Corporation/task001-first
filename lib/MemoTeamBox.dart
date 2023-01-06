@@ -21,11 +21,11 @@ class MemoTeamBox extends StatelessWidget {
       child: Container(
           height: 100,
           width: double.infinity,
-          padding: const EdgeInsets.all(10),
+          padding: const EdgeInsets.all(15),
           margin: const EdgeInsets.symmetric(horizontal: 30, vertical: 15),
           decoration: BoxDecoration(
               color: Colors.white,
-              border: Border.all(color: borderColor, width: 5),
+              border: Border.all(color: borderColor, width: 3),
               borderRadius: BorderRadius.circular(17),
               boxShadow: const [
                 BoxShadow(
