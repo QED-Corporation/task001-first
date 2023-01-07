@@ -1,6 +1,6 @@
 # qed_task01
 
-Task#001 쌩 초안
+Task#001 그냥 초안
 
 ## Getting Started
 
