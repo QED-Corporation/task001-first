@@ -43,7 +43,7 @@ class _MainScreenState extends State<MainScreen> {
                   : (state == 3)
                       ? const Friends()
                       : const License(),
-      bottomNavigationBar: MyBottomNavigator(ontap: stateSet),
+      bottomNavigationBar: MyBottomNavigator(ontap: stateSet, selected: state,),
     );
   }
 }

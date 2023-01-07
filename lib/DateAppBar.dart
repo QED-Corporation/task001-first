@@ -29,6 +29,7 @@ class DataAppBar {
   AppBar getAppbar() => AppBar(
       centerTitle: true,
       backgroundColor: Colors.white,
+      foregroundColor: Colors.black87,
       title: Text.rich(TextSpan(
         text: today.format('M월 d일 '),
         style: const TextStyle(fontSize: 30, color: Colors.black),

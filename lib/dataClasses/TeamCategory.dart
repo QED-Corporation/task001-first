@@ -1,10 +1,13 @@
 import 'Team.dart';
+import 'package:get/get.dart';
 
-class TeamCategory{
+class TeamCategory extends GetxController{
   String name = '<UNKNOWN>';
   List<Team> teams = List.empty(growable: true);
-  bool folded = false;
+  dynamic folded = false.obs;
 
-  TeamCategory({required this.name, required this.teams, this.folded = false});
+  TeamCategory({required this.name, required this.teams});
+
+  void foldOrOpen() => folded.value = !folded.value;
 
 }
