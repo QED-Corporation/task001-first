@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:dart_date/dart_date.dart';
 
 class DataAppBar {
-
   String getKoreanWeek(int week) {
     switch (week) {
       case 1:
@@ -27,6 +26,7 @@ class DataAppBar {
   final DateTime today = DateTime.now().addHours(9);
 
   AppBar getAppbar() => AppBar(
+      elevation: 1,
       centerTitle: true,
       backgroundColor: Colors.white,
       foregroundColor: Colors.black87,
@@ -42,8 +42,8 @@ class DataAppBar {
                   color: (today.weekday == 7)
                       ? Colors.red
                       : (today.weekday == 6)
-                      ? Colors.blue
-                      : Colors.black))
+                          ? Colors.blue
+                          : Colors.black))
         ],
       )));
 }
